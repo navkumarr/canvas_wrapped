@@ -1,0 +1,68 @@
+/* Assignments.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .assignments-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assignments-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .assignment-item {
+    margin: 20px 0;
+  }
+  
+  .assignment-card {
+    background: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .assignment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #ffffff;
+  }
+  
+  .course-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .assignment-name {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .due-date {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .no-assignments {
+    font-size: 1.2em;
+    color: #999;
+  }
+  
