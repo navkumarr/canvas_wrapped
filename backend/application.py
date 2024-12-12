@@ -3,7 +3,7 @@ from flask_cors import CORS
 from user import User
 import os
 
-app = Flask(__name__, static_folder='frontend/build')
+app = Flask(__name__, static_folder='frontend/build', static_url_path='/') 
 CORS(app)
 
 @app.route('/api/assignments', methods=['GET'])
@@ -24,7 +24,6 @@ def get_assignments():
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve(path):
-    # Serve React's static files
     if path != "" and os.path.exists(app.static_folder + '/' + path):
         return send_from_directory(app.static_folder, path)
     else:
