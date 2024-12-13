@@ -1,9 +1,15 @@
 from canvasapi import Canvas
 from canvasapi.exceptions import CanvasException
 import datetime
+from dotenv import load_dotenv
+import os
 
+# Load variables from .env
+load_dotenv()
+
+# Access the API key
+API_KEY = os.getenv("API_KEY")
 API_URL = "https://canvas.wisc.edu"
-API_KEY = "8396~XVZFcCKxzFUY4XLA3zCfTJhRcY8VrfR4EPA8AB33wK3ukPYa7QKYCuLXeQe3uRYU"
 
 class User:
     def __init__(self):
